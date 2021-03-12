@@ -31,8 +31,8 @@ public class Task {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
-    @Column(name = "context", length = 255, nullable = false)
-    private String context;
+    @Column(name = "content", length = 255, nullable = false)
+    private String content;
 
     public Integer getId() {
         return id;
@@ -58,12 +58,12 @@ public class Task {
         this.updated_at = updated_at;
     }
 
-    public String getContext() {
-        return context;
+    public String getContent() {
+        return content;
     }
 
-    public void setContext(String context) {
-        this.context = context;
+    public void setContent(String content) {
+        this.content = content;
     }
 
 
